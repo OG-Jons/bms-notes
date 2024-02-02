@@ -26,40 +26,41 @@ jobs:
         
         # If the marker is found, update the table of contents
         if [ -n "$marker_line" ]; then
-          echo "Line $marker_line"
           # Find all markdown files in the "topics" directory
           markdown_files=$(find topics -name "*.md")
-          echo "Files: $markdown_files"
-
+        
           # Generate table of contents
           toc=""
           current_dir=""
           for file in $markdown_files; do
             # Extract directory name
             dir=$(dirname "$file")
-            
+        
             # If the directory changes, add a new section
             if [ "$dir" != "$current_dir" ]; then
               current_dir="$dir"
               dir_name=$(basename "$dir" | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
               toc="$toc\n- [$dir_name](./$dir)"
             fi
-            
+        
             # Format entry for the table of contents
-            entry="  - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
-            
+            entry="\t- [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
             # Add entry to the appropriate section based on the directory
             toc="$toc\n$entry"
           done
-
-          echo "TOC Final: $toc"
-
-          # Use echo to append the table of contents after the marker
-          echo "$toc" | sed -e "/$marker/a\\" -e "  " README.md > README.md.tmp
-          mv README.md.tmp README.md
+        
+          # Get the content before the marker
+          head -n $(($marker_line - 1)) README.md > temp.txt
+        
+          # Append the new table of contents
+          echo -e "$toc" >> temp.txt
+        
+          # Replace the old README with the new one
+          mv temp.txt README.md
         else
           echo "Marker not found in README.md. Add <!--TABLE_OF_CONTENTS_MARKER--> to indicate where the table of contents should be inserted."
         fi
+
 
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.1.4
