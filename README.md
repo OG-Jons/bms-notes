@@ -1,5 +1,5 @@
-# BMS Mathematics
-(Hopefully) everything I learn in mathematics throughout my time in BMS
+# Table of Contents
 
-## Table of contents
-TODO
+
+### topics/quadratics
+- [equations-and-parabola](./topics/quadratics/equations-and-parabola.md)
