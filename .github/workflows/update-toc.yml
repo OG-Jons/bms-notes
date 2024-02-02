@@ -40,8 +40,8 @@ jobs:
         echo -e "# Table of Contents\n$toc" > README.md
 
         # Commit changes
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --global user.name 'OG-Jons'
+        git config --global user.email 'og-jons@users.noreply.github.com'
         git add README.md
         git commit -m "Update Table of Contents" || true
         git push
