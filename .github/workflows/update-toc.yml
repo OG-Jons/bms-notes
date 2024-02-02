@@ -29,6 +29,7 @@ jobs:
           echo "Line $marker_line"
           # Find all markdown files in the "topics" directory
           markdown_files=$(find topics -name "*.md")
+          echo "Files: $markdown_files"
 
           # Generate table of contents
           toc=""
@@ -36,23 +37,27 @@ jobs:
           for file in $markdown_files; do
             # Extract directory name
             dir=$(dirname "$file")
+
+            echo "Dir: $dir"
             
             # If the directory changes, add a new section
             if [ "$dir" != "$current_dir" ]; then
               current_dir="$dir"
               dir_name=$(basename "$dir" | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
               toc="$toc\n- [$dir_name](./$dir)"
+              echo "Toc: $toc"
             fi
             
             # Format entry for the table of contents
             entry="  - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
-            
+            echo "Entry: $entry:"
             # Add entry to the appropriate section based on the directory
             toc="$toc\n$entry"
           done
 
           # Update the table of contents in the README.md file
           awk -v toc="$toc" -v marker_line="$marker_line" 'NR == marker_line + 1 {print toc} {print}' README.md > README.md.tmp
+          cat Readme.md.tmp
           mv README.md.tmp README.md
         else
           echo "Marker not found in README.md. Add <!--TABLE_OF_CONTENTS_MARKER--> to indicate where the table of contents should be inserted."
