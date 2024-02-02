@@ -50,7 +50,7 @@ jobs:
           done
         
           # Get the content before the marker
-          head -n $(($marker_line - 1)) README.md > temp.txt
+          head -n $(($marker_line)) README.md > temp.txt
         
           # Append the new table of contents
           echo -e "$toc" >> temp.txt
