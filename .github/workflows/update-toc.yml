@@ -44,7 +44,7 @@ jobs:
             if [ "$dir" != "$current_dir" ]; then
               current_dir="$dir"
               dir_name=$(basename "$dir" | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
-              toc="$toc\n- [$dir_name](./$dir)"
+              toc="$toc<br>- [$dir_name](./$dir)"
               echo "Toc: $toc"
             fi
             
@@ -52,7 +52,7 @@ jobs:
             entry="  - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
             echo "Entry: $entry:"
             # Add entry to the appropriate section based on the directory
-            toc="$toc\n$entry"
+            toc="$toc<br>$entry"
           done
           echo "TOC Final: $toc"
 
