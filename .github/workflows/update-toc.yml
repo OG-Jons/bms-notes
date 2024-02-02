@@ -51,8 +51,8 @@ jobs:
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.1.4
       with:
-          author_name: OG-Jons
-          author_email: jonas@marschall.pro
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
           message: 'Update Table of Contents'
           add: 'README.md'
 
