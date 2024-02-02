@@ -4,7 +4,6 @@
 ## Table of contents
 <!--TABLE_OF_CONTENTS_MARKER-->
 
-- [Free-fall](./topics/free-fall.md)
 - [Maths](./topics/maths)
 
 	- [Quadratics](./topics/maths/quadratics)
@@ -13,3 +12,8 @@
 	- [Linear](./topics/maths/linear)
 
 		- [Equations](./topics/maths/linear/equations.md)
+- [Physics](./topics/physics)
+
+	- [Kinematics](./topics/physics/kinematics)
+
+		- [Free-fall](./topics/physics/kinematics/free-fall.md)
