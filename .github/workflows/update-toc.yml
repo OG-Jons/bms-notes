@@ -56,8 +56,9 @@ jobs:
           done
           echo "TOC Final: $toc"
 
-          # Update the table of contents in the README.md file
-          sed -i "${marker_line}r /dev/stdin" README.md <<< "$toc"
+          # Use echo to append the table of contents after the marker
+          echo "$toc" | sed -e "/$marker/a\\" -e "  " README.md > README.md.tmp
+          mv README.md.tmp README.md
         else
           echo "Marker not found in README.md. Add <!--TABLE_OF_CONTENTS_MARKER--> to indicate where the table of contents should be inserted."
         fi
