@@ -8,10 +8,7 @@ Free fall refers to the motion of an object when it is only influenced by gravit
 
 ### Formulas
 - The distance traveled by an object in free fall can be calculated using the formula: 
-    $$
-    \displaystyle
-    d = \frac{1}{2}gt^2
-    $$
+    $$d = \frac{1}{2}gt^2$$
     where 'd' is the distance, 'g' is the acceleration due to gravity, and 't' is the time.
 
 - The velocity of an object in free fall can be calculated using the formula:
