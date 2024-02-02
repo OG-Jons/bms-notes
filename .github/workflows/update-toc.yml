@@ -39,10 +39,11 @@ jobs:
         # Update the README.md file with the generated table of contents
         echo -e "# Table of Contents\n$toc" > README.md
 
-        # Commit changes
-        git config --global user.name 'OG-Jons'
-        git config --global user.email 'og-jons@users.noreply.github.com'
-        git add README.md
-        git commit -m "Update Table of Contents" || true
-        git push
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.1.4
+      with:
+          author_name: OG-Jons
+          author_email: jonas@marschall.pro
+          message: 'Update Table of Contents'
+          add: 'README.md'
 
