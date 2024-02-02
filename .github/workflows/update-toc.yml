@@ -1,0 +1,48 @@
+name: Update Table of Contents
+
+on:
+  push:
+    branches:
+      - master # Adjust the branch name as needed
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y jq
+
+    - name: Update Table of Contents
+      run: |
+        # Find all markdown files in the "topics" directory
+        markdown_files=$(find topics -name "*.md")
+
+        # Generate table of contents
+        toc=""
+        for file in $markdown_files; do
+          # Extract directory name
+          dir=$(dirname "$file")
+          
+          # Format entry for the table of contents
+          entry="- [$(basename "$file" .md)](./$file)"
+          
+          # Add entry to the appropriate section based on the directory
+          toc="$toc\n\n### $dir\n$entry"
+        done
+
+        # Update the README.md file with the generated table of contents
+        echo -e "# Table of Contents\n$toc" > README.md
+
+        # Commit changes
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git commit -m "Update Table of Contents" || true
+        git push
+
