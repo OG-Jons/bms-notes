@@ -26,6 +26,7 @@ jobs:
         
         # If the marker is found, update the table of contents
         if [ -n "$marker_line" ]; then
+          echo "Line $marker_line"
           # Find all markdown files in the "topics" directory
           markdown_files=$(find topics -name "*.md")
 
