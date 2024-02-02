@@ -4,9 +4,11 @@
 ## Table of contents
 <!--TABLE_OF_CONTENTS_MARKER-->
 
-- [Quadratics](./topics/quadratics)
+- [Maths](./topics/maths)
 
-	- [Equations and parabola](./topics/quadratics/equations_and_parabola.md)
-- [Linear](./topics/linear)
+	- [Quadratics](./topics/maths/quadratics)
 
-	- [Equations](./topics/linear/equations.md)
+		- [Equations and parabola](./topics/maths/quadratics/equations_and_parabola.md)
+	- [Linear](./topics/maths/linear)
+
+		- [Equations](./topics/maths/linear/equations.md)
