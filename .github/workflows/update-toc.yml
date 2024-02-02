@@ -33,12 +33,12 @@ jobs:
           # If the directory changes, add a new section
           if [ "$dir" != "$current_dir" ]; then
             current_dir="$dir"
-            dir_name=$(basename "$dir")
+            dir_name=$(basename "$dir" | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
             toc="$toc\n- [$dir_name](./$dir)"
           fi
           
           # Format entry for the table of contents
-          entry="  - [$(basename "$file" .md)](./$file)"
+          entry="  - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
           
           # Add entry to the appropriate section based on the directory
           toc="$toc\n$entry"
