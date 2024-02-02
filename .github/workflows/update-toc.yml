@@ -25,16 +25,25 @@ jobs:
 
         # Generate table of contents
         toc=""
+        current_dir=""
         for file in $markdown_files; do
           # Extract directory name
           dir=$(dirname "$file")
           
+          # If the directory changes, add a new section
+          if [ "$dir" != "$current_dir" ]; then
+            current_dir="$dir"
+            dir_name=$(basename "$dir")
+            toc="$toc\n- [$dir_name](./$dir)"
+          fi
+          
           # Format entry for the table of contents
-          entry="- [$(basename "$file" .md)](./$file)"
+          entry="  - [$(basename "$file" .md)](./$file)"
           
           # Add entry to the appropriate section based on the directory
-          toc="$toc\n\n### $dir\n$entry"
+          toc="$toc\n$entry"
         done
+
 
         # Update the README.md file with the generated table of contents
         echo -e "# Table of Contents\n$toc" > README.md
