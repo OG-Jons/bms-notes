@@ -4,6 +4,7 @@
 ## Table of contents
 <!--TABLE_OF_CONTENTS_MARKER-->
 
+- [Free-fall](./topics/free-fall.md)
 - [Maths](./topics/maths)
 
 	- [Quadratics](./topics/maths/quadratics)
