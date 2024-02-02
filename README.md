@@ -1,7 +1,7 @@
 # Material for BMS
 
 
-# Table of contents
+## Table of contents
 <!--TABLE_OF_CONTENTS_MARKER-->
 
 - [Quadratics](./topics/quadratics)
