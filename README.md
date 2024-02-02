@@ -10,6 +10,3 @@
 - [Linear](./topics/linear)
 
 	- [Equations](./topics/linear/equations.md)
-	- [Test](./topics/linear/test)
-
-		- [What](./topics/linear/test/what.md)
