@@ -20,47 +20,56 @@ jobs:
 
     - name: Update Table of Contents
       run: |
+        # Function to generate table of contents
+        generate_toc() {
+          local dir=$1
+          local indent=$2
+        
+          # Find all markdown files in the directory
+          local markdown_files=$(find "$dir" -maxdepth 1 -name "*.md")
+        
+          # Generate table of contents
+          local toc=""
+          for file in $markdown_files; do
+            # Format entry for the table of contents
+            local entry="${indent}- [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
+            # Add entry to the table of contents
+            toc="$toc\n$entry"
+          done
+        
+          # Recursively generate table of contents for subdirectories
+          local subdirs=$(find "$dir" -mindepth 1 -maxdepth 1 -type d)
+          for subdir in $subdirs; do
+            # Add a new section for the subdirectory
+            local subdir_name=$(basename "$subdir" | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
+            toc="$toc\n${indent}- [$subdir_name](./$subdir)"
+            # Generate table of contents for the subdirectory
+            toc="$toc\n$(generate_toc "$subdir" "$indent\t")"
+          done
+        
+          printf "$toc"
+        }
+        
         # Find the marker in the README.md file
         marker="<!--TABLE_OF_CONTENTS_MARKER-->"
         marker_line=$(grep -n "$marker" README.md | cut -d ":" -f 1)
         
         # If the marker is found, update the table of contents
         if [ -n "$marker_line" ]; then
-          # Find all markdown files in the "topics" directory
-          markdown_files=$(find topics -name "*.md")
-        
           # Generate table of contents
-          toc=""
-          current_dir=""
-          for file in $markdown_files; do
-            # Extract directory name
-            dir=$(dirname "$file")
-        
-            # If the directory changes, add a new section
-            if [ "$dir" != "$current_dir" ]; then
-              current_dir="$dir"
-              dir_name=$(basename "$dir" | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
-              toc="$toc\n- [$dir_name](./$dir)"
-            fi
-        
-            # Format entry for the table of contents
-            entry="\t- [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
-            # Add entry to the appropriate section based on the directory
-            toc="$toc\n$entry"
-          done
+          toc=$(generate_toc "topics" "")
         
           # Get the content before the marker
           head -n $(($marker_line)) README.md > temp.txt
         
           # Append the new table of contents
-          echo -e "$toc" >> temp.txt
+          echo "$toc" >> temp.txt
         
           # Replace the old README with the new one
           mv temp.txt README.md
         else
           echo "Marker not found in README.md. Add <!--TABLE_OF_CONTENTS_MARKER--> to indicate where the table of contents should be inserted."
         fi
-
 
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.1.4
