@@ -57,7 +57,7 @@ jobs:
 
           # Update the table of contents in the README.md file
           awk -v toc="$toc" -v marker_line="$marker_line" 'NR == marker_line + 1 {print toc} {print}' README.md > README.md.tmp
-          cat Readme.md.tmp
+          cat README.md.tmp
           mv README.md.tmp README.md
         else
           echo "Marker not found in README.md. Add <!--TABLE_OF_CONTENTS_MARKER--> to indicate where the table of contents should be inserted."
