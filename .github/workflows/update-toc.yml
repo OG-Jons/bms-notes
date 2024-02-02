@@ -37,23 +37,21 @@ jobs:
           for file in $markdown_files; do
             # Extract directory name
             dir=$(dirname "$file")
-
-            echo "Dir: $dir"
             
             # If the directory changes, add a new section
             if [ "$dir" != "$current_dir" ]; then
               current_dir="$dir"
               dir_name=$(basename "$dir" | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
-              toc="$toc<br>- [$dir_name](./$dir)"
-              echo "Toc: $toc"
+              toc="$toc\n- [$dir_name](./$dir)"
             fi
             
             # Format entry for the table of contents
-            entry="\t  - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
-            echo "Entry: $entry:"
+            entry="  - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
+            
             # Add entry to the appropriate section based on the directory
-            toc="$toc<br>$entry"
+            toc="$toc\n$entry"
           done
+
           echo "TOC Final: $toc"
 
           # Use echo to append the table of contents after the marker
