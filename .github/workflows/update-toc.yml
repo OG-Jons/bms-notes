@@ -49,7 +49,7 @@ jobs:
             fi
             
             # Format entry for the table of contents
-            entry="  - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
+            entry="    - [$(basename "$file" .md | sed 's/_/ /g' | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')](./$file)"
             echo "Entry: $entry:"
             # Add entry to the appropriate section based on the directory
             toc="$toc<br>$entry"
@@ -57,7 +57,7 @@ jobs:
           echo "TOC Final: $toc"
 
           # Update the table of contents in the README.md file
-          printf "%s\n" "$toc" | sed -e "${marker_line}r /dev/stdin" -e "${marker_line}q" README.md > README.md.tmp
+          sed -e "${marker_line}r /dev/stdin" -e "${marker_line}q" README.md > README.md.tmp
           mv README.md.tmp README.md
           cat README.md
         else
