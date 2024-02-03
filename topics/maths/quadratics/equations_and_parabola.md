@@ -24,7 +24,7 @@ Quadratic equations are closely related to the graph of a parabola. The general 
 f(x) = ax^2 + bx + c
 ```
 
-The graph of this equation is a parabola, which can open upwards or downwards depending on the sign of $`a`$. 
+The graph of this equation is a parabola, which can open upwards or downwards depending on the sign of $`a`$.
 
 - If $`a > 0`$, the parabola opens upwards.
 - If $`a < 0`$, the parabola opens downwards.
