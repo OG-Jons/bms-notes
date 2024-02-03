@@ -12,12 +12,12 @@
 - $t = $ Time
   - $[t] = s$ (seconds)
 - $\Delta t$ = Time interval
-  - [$\Delta t$] = s
+  - $[\Delta t]$ = s
   - $t_A$ = Start time | $t_E$ = End time  
   - $\Delta t = t_E - t_A$
 - $v$ = Speed
   - $\displaystyle v [\frac{m}{s}] = \frac{\Delta s[m]}{\Delta t[s]} = \frac{s_E[m] - s_A[m]}{t_E[s] - t_A[s]}$
-  - [$v$] = m/s
+  - $[v]$ = m/s
   - $s_A$ = Initial position | $s_E$ = End position
 
 It is an average speed in the time interval $\Delta t$. The smaller the measured time interval, the closer we get to an instantaneous speed.
