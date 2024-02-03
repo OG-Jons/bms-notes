@@ -2,7 +2,7 @@
 
 ## Units
 
-- $s = $ Distance
+- $s =$ Distance
   - $[s] = m$
   - For the distance the symbols $x$, $sx$ or $h$ are also used.
 - $\Delta s =$ Distance difference
