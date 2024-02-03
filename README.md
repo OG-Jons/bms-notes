@@ -18,3 +18,6 @@
 
 		- [Free-fall](./topics/physics/kinematics/free-fall.md)
 		- [Movement](./topics/physics/kinematics/movement.md)
+		- [Exercises](./topics/physics/kinematics/exercises)
+
+			- [Kinematic-1d](./topics/physics/kinematics/exercises/kinematic-1D.md)
