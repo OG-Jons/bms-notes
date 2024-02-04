@@ -18,8 +18,8 @@
 
 4. Car starts from standing. Endspeed is $30m/s$, drives for $10s$.
    1. How far did it drive?
-      - $ \overline{v} = v_E / 2 = 30m/s / 2 = 15m/s$
-      - $ s_Auto = \overline{v} * t = 15m/s * 10s = \underline{\underline{150m}}$
+      - $\overline{v} = v_E / 2 = 30m/s / 2 = 15m/s$
+      - $s_Auto = \overline{v} * t = 15m/s * 10s = \underline{\underline{150m}}$
 
 5. Car starts from standing. Constant acceleration of $1m/s^2$.
    1. Which distance $s$ did the car cover, if it's end velocity $v_E$ is $5 m/s$
@@ -27,10 +27,10 @@
 
 6. Car starts from standing. Starts $10m$ behind the origin and reaches $60m$ in $10s$
    1. What is it's average speed?
-      - $ \overline{v} = s / t = 60m / 10s = \underline{\underline{6 m/s}} $
+      - $\overline{v} = s / t = 60m / 10s = \underline{\underline{6 m/s}} $
    2. Which Position $s$ does the Car have compared to the origin?
-      - $ s_T = s - s_U = 60m - 10m = \underline{\underline{50m}}$
+      - $s_T = s - s_U = 60m - 10m = \underline{\underline{50m}}$
 
 7. What is the velocity $v$ of a Car, that is already driving at $v_A=10m/s$ and accelerates at $0.1m/s^2$ for $10$ seconds?
    1. What is it's endvelocity $v_E$?
-      - $v_E=v_A+a*t=10m/s+0.1m/s^2*10=\underline{\underline{11m/s}}$
+      - $v_E=v_A+a\*t=10m/s+0.1m/s^2*10=\underline{\underline{11m/s}}$
