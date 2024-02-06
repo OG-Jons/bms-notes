@@ -34,3 +34,7 @@
 7. What is the velocity $v$ of a Car, that is already driving at $v_A=10m/s$ and accelerates at $0.1m/s^2$ for $10$ seconds?
    1. What is it's endvelocity $v_E$?
       - $v_E=v_A+a*t=10m/s+0.1m/s^2*10=\underline{\underline{11m/s}}$
+
+8. A car has a startvelocity $v_A = 6m/s$ and travels $40m$ within the first $5s$.
+   1. What is the acceleration?
+      - sdj  
