@@ -4,6 +4,11 @@
 ## Table of contents
 <!--TABLE_OF_CONTENTS_MARKER-->
 
+- [History](./topics/history)
+
+	- [First-world-war](./topics/history/first-world-war)
+
+		- [Summary](./topics/history/first-world-war/summary.md)
 - [Maths](./topics/maths)
 
 	- [Quadratics](./topics/maths/quadratics)
