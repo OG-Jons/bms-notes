@@ -4,19 +4,14 @@
 ## Table of contents
 <!--TABLE_OF_CONTENTS_MARKER-->
 
-- [History](./topics/history)
-
-	- [First world war](./topics/history/first_world_war)
-
-		- [Summary](./topics/history/first_world_war/summary.md)
 - [Maths](./topics/maths)
 
-	- [Quadratics](./topics/maths/quadratics)
-
-		- [Equations and parabola](./topics/maths/quadratics/equations_and_parabola.md)
 	- [Linear](./topics/maths/linear)
 
 		- [Equations](./topics/maths/linear/equations.md)
+	- [Quadratics](./topics/maths/quadratics)
+
+		- [Equations and parabola](./topics/maths/quadratics/equations_and_parabola.md)
 - [Physics](./topics/physics)
 
 	- [Kinematics](./topics/physics/kinematics)
@@ -26,3 +21,8 @@
 		- [Exercises](./topics/physics/kinematics/exercises)
 
 			- [Kinematic-1d](./topics/physics/kinematics/exercises/kinematic-1D.md)
+- [History](./topics/history)
+
+	- [First world war](./topics/history/first_world_war)
+
+		- [Summary](./topics/history/first_world_war/summary.md)
