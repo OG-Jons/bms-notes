@@ -6,9 +6,9 @@
 
 - [History](./topics/history)
 
-	- [First-world-war](./topics/history/first-world-war)
+	- [First world war](./topics/history/first_world_war)
 
-		- [Summary](./topics/history/first-world-war/summary.md)
+		- [Summary](./topics/history/first_world_war/summary.md)
 - [Maths](./topics/maths)
 
 	- [Quadratics](./topics/maths/quadratics)
