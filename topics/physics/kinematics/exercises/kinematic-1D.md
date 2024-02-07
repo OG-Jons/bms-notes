@@ -37,4 +37,9 @@
 
 8. A car has a startvelocity $v_A = 6m/s$ and travels $40m$ within the first $5s$.
    1. What is the acceleration?
-      - sdj  
+      - $s = ut + 0.5at^2$
+      - $40 = 6*5 + 0.5a*(5^2)$
+      - $40 = 30 + 0.5a*25$
+      - $40 = 30 + 12.5a$
+      - $10 = 12.5a$
+      - $a = 0.8m/s^2$
