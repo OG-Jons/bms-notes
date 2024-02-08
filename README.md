@@ -12,6 +12,7 @@
 	- [Quadratics](./topics/maths/quadratics)
 
 		- [Equations and parabola](./topics/maths/quadratics/equations_and_parabola.md)
+		- [Calculating squares](./topics/maths/quadratics/calculating_squares.md)
 - [Physics](./topics/physics)
 
 	- [Kinematics](./topics/physics/kinematics)
