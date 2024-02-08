@@ -236,4 +236,4 @@ $$
 \text{Vertex } = 0.25(2)^2 - 3 = -4
 $$
 
-So, the vertex of the function $f(x) = 0.25x^2 - x - 3$ is $(2, -4)$.x
+So, the vertex of the function $f(x) = 0.25x^2 - x - 3$ is $(2, -4)$.
