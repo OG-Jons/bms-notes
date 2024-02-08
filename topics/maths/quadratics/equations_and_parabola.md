@@ -118,15 +118,15 @@ In this section, we are calculating the vertex of a parabola. The vertex is the 
 
 - Example 1
 
-Here, we're given the function f(x) = -6(3x - 1)^2. We're rewriting this function in vertex form, which is a(x-h)^2 + k, where (h, k) is the vertex of the parabola.
+Here, we're given the function $f(x) = -6(3x - 1)^2$. We're rewriting this function in vertex form, which is $a(x-h)^2 + k$, where $(h, k)$ is the vertex of the parabola.
 
 $$
 \begin{align*}
 f(x) &= -6(3x - 1)^2 \\
-&= -6(3(x-\frac{1}{3}))^2 \\
-&= -6(3^2(x-\frac{1}{3})^2) \\
-&= -6*9(x-\frac{1}{3})^2 \\
-&= -54(x-\underline{\underline{\frac{1}{3}}})^2 + \underline{\underline{0}} \\
+&= -6(3(x - \frac{ 1 }{ 3 }))^2 \\
+&= -6(3^2(x - \frac{ 1 }{ 3 })^2) \\
+&= -6 * 9(x - \frac{ 1 }{ 3 })^2 \\
+&= -54(x - \underline{ \underline{ \frac{ 1 }{ 3 } } } )^2 + \underline{ \underline{ 0 }} \\
 \end{align*}
 $$
 
