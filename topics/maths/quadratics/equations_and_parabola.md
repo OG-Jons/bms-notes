@@ -118,15 +118,15 @@ In this section, we are calculating the vertex of a parabola. The vertex is the 
 
 - Example 1
 
-Here, we're given the function f(x) = -6(3x - 1)^2. We're rewriting this function in vertex form, which is a(x-h)^2 + k, where (h, k) is the vertex of the parabola.
+Here, we're given the function $f(x) = -6(3x - 1)^2$. We're rewriting this function in vertex form, which is $a(x-h)^2 + k$, where $(h, k)$ is the vertex of the parabola.
 
 $$
 \begin{align*}
 f(x) &= -6(3x - 1)^2 \\
-&= -6(3(x-\frac{1}{3}))^2 \\
-&= -6(3^2(x-\frac{1}{3})^2) \\
-&= -6*9(x-\frac{1}{3})^2 \\
-&= -54(x-\underline{\underline{\frac{1}{3}}})^2 + \underline{\underline{0}} \\
+&= -6(3(x - \frac{ 1 }{ 3 }))^2 \\
+&= -6(3^2(x - \frac{ 1 }{ 3 })^2) \\
+&= -6 * 9(x - \frac{ 1 }{ 3 })^2 \\
+&= -54(x - \underline{ \underline{ \frac{ 1 }{ 3 } } } )^2 + \underline{ \underline{ 0 }} \\
 \end{align*}
 $$
 
@@ -160,9 +160,10 @@ $$
 
 In this section, we calculate the vertex from the null points of a function. The null points are the x-values where the function equals zero. The vertex lies in the center between the two null points.
 
-Example: We have the function $f(x) = 0.25x^2 - x -3$ and the null points $x_01=-2$ and $x_02=6$. The difference between the null points is calculated, then divided by 2 to find the x-coordinate of the vertex. The y-coordinate of the vertex is found by substituting the x-coordinate into the function. The vertex is (2, -4).
+Example: We have the function $f(x) = 0.25x^2 - x -3$ and the null points $x_01=-2$ and $x_02=6$. The difference between the null points is calculated, then divided by 2 to find the x-coordinate of the vertex. The y-coordinate of the vertex is found by substituting the x-coordinate into the function. The vertex is $(2, -4)$.
 
 We know, that the vertex lies in the center between the two null points.
+
 $$
 \Delta x = 6 - (-2) = 8 \\
 \downarrow	\\
@@ -177,6 +178,7 @@ x_01 + \frac{\Delta x}{2} &= -2 + 4 \\
 $$
 
 Which means:
+
 $$
 \begin{align*}
 f(2) &= 0.25(2)^2 - 2 - 3 \\
