@@ -67,3 +67,24 @@ The vertex form allows us to easily identify the vertex and understand the direc
 ![Parabola Graph](parabola_graph.png)
 
 This graph represents the parabola $`y = 2x^2 - 4x + 2`$, with the vertex at $`(1, 0)`$ and an upward opening.
+
+
+## Coefficient `b` in Quadratic Equations and Parabolas
+
+In the quadratic equation $ax^2 + bx + c = 0$ and the function $f(x) = ax^2 + bx + c$, `b` is the coefficient of the linear term (`bx`). This coefficient has several effects on the properties of the quadratic equation and the parabola it represents:
+
+### Example 1: Quadratic Function with $b = 0$
+
+Consider the quadratic function $f(x) = x^2$. This function has a $b$ coefficient of 0. The graph of this function is a parabola that opens upwards and is symmetric about the y-axis (the line $x = 0$).
+
+### Example 2: Quadratic Function with $b = 4$
+
+Now consider the quadratic function $f(x) = x^2 + 4x$. This function has a $b$ coefficient of 4. The graph of this function is also a parabola that opens upwards, but it is not symmetric about the y-axis. Instead, it is symmetric about the line $x = -2$, which is given by the formula $x = -\frac{b}{2a}$.
+
+Comparing these two examples, we can see that changing the $b$ coefficient shifts the parabola horizontally along the x-axis. The vertex of the parabola, which was at the origin in the first example, has moved to the point $(-2, -4)$ in the second example.
+
+### Display
+
+This is how the above examples behave, when displayed as a parabola
+
+![coefficient_b](coefficient_b.png)
