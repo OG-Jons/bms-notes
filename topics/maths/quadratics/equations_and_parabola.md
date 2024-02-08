@@ -165,9 +165,11 @@ Example: We have the function $f(x) = 0.25x^2 - x -3$ and the null points $x_01=
 We know, that the vertex lies in the center between the two null points.
 
 $$
+\displaylines{
 \Delta x = 6 - (-2) = 8 \\
 \downarrow	\\
 \frac{\Delta x}{2} = 4
+}
 $$
 x-Coordinates of the Vertex is then:
 $$
