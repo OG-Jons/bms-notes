@@ -88,3 +88,24 @@ Comparing these two examples, we can see that changing the $b$ coefficient shift
 This is how the above examples behave, when displayed as a parabola
 
 ![coefficient_b](coefficient_b.png)
+
+
+## Vertex (Scheitelpunktform)
+
+### $f(x) = a(x-u)^2+v$
+
+**Important**: $a$ is written before the parantheses, $(ax-u)^2$ is *not* a valid Vertex formula. It is required to be formed as $a(x-u)^2$
+
+- Example 1
+    Convert $f(x)=8(x+0.5)^2-1$ to the basic formula.
+    - $f(x)=8(x^2+x+0.25)-1$
+    - $f(x)=8x^2+8x+2-1$
+    - $\underline{\underline{f(x)=8x^2+8x+1}}$
+Which then means, $a=8, \space b=8, \space c=1$
+
+- Example 2
+    Convert $f(x)=3x^2-12x-18$ to the Vertex formula
+    - $f(x)=3(x^2-4x-6)$ || [Complete the square](./calculating_squares.md)
+    - $f(x)=3(x^2-4x+4-4-6)$
+    - $f(x)=3((x-2)^2-10)$
+    - $\underline{\underline{f(x)=3(x-2)^2-30}}$
