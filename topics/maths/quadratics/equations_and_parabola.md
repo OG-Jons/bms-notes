@@ -96,6 +96,8 @@ This is how the above examples behave, when displayed as a parabola
 
 **Important**: $a$ is written before the parantheses, $(ax-u)^2$ is *not* a valid Vertex formula. It is required to be formed as $a(x-u)^2$
 
+
+#### Converting from one form to another
 - Example 1
     Convert $f(x)=8(x+0.5)^2-1$ to the basic formula.
     - $f(x)=8(x^2+x+0.25)-1$
@@ -109,3 +111,129 @@ Which then means, $a=8, \space b=8, \space c=1$
     - $f(x)=3(x^2-4x+4-4-6)$
     - $f(x)=3((x-2)^2-10)$
     - $\underline{\underline{f(x)=3(x-2)^2-30}}$
+
+#### Calculating the vertex
+
+In this section, we are calculating the vertex of a parabola. The vertex is the point where the parabola turns.
+
+- Example 1
+
+Here, we're given the function f(x) = -6(3x - 1)^2. We're rewriting this function in vertex form, which is a(x-h)^2 + k, where (h, k) is the vertex of the parabola.
+
+$$
+\begin{align*}
+f(x) &= -6(3x - 1)^2 \\
+&= -6(3(x-\frac{1}{3}))^2 \\
+&= -6(3^2(x-\frac{1}{3})^2) \\
+&= -6*9(x-\frac{1}{3})^2 \\
+&= -54(x-\underline{\underline{\frac{1}{3}}})^2 + \underline{\underline{0}} \\
+\end{align*}
+$$
+
+The vertex of this function is at the point (1/3, 0).
+
+- Example 2
+
+In this example, the function g(x) is already in vertex form. The vertex is (-0.5, -1).
+
+$$
+\begin{align*}
+g(x) &=8(x + \underline{0.5})^2 \underline{- 1} \\
+\end{align*}
+$$
+
+- Example 3
+
+In this example, the function h(x) is rewritten in vertex form. The vertex is (-2, 0).
+
+$$
+\begin{align*}
+h(x) &=(4 + 2x)^2 \\
+&=(2x+4)^2 \\
+&=(2(x+2))^2 \\
+&=(2^2(x+2)^2) \\
+&=4(x+2)^2 \\
+\end{align*}
+$$
+
+#### Calculate Vertex from Nullpoints
+
+In this section, we calculate the vertex from the null points of a function. The null points are the x-values where the function equals zero. The vertex lies in the center between the two null points.
+
+Example: We have the function $f(x) = 0.25x^2 - x -3$ and the null points $x_01=-2$ and $x_02=6$. The difference between the null points is calculated, then divided by 2 to find the x-coordinate of the vertex. The y-coordinate of the vertex is found by substituting the x-coordinate into the function. The vertex is (2, -4).
+
+We know, that the vertex lies in the center between the two null points.
+$$
+\Delta x = 6 - (-2) = 8 \\
+\downarrow	\\
+\frac{\Delta x}{2} = 4
+$$
+x-Coordinates of the Vertex is then:
+$$
+\begin{align*}
+x_01 + \frac{\Delta x}{2} &= -2 + 4 \\
+&=2
+\end{align*}
+$$
+
+Which means:
+$$
+\begin{align*}
+f(2) &= 0.25(2)^2 - 2 - 3 \\
+&= 1 - 2 - 3 \\
+&= -4
+\end{align*}
+$$
+$$
+\text{Vertex: S} (2, -4)
+$$
+
+### Auxiliary Function
+1) **Construction of an auxiliary function h** by shifting the original function f in the direction of the y-axis. The advantage of the auxiliary function is that the x-coordinate of the vertex is the same as that of f and the zeros are easier to determine.
+
+2) **Determine the zeros of the auxiliary function.**
+
+3) **Determine the x-coordinate of the vertex** as the midpoint between the two zeros (analogous to the previous example).
+
+4) **Calculate the y-coordinate of the vertex.**
+
+#### Example
+Given the function $f(x) = 0.25x^2 - x - 3$, we want to find its vertex.
+
+1) **Construction of an auxiliary function h**
+
+We can construct an auxiliary function by completing the square for the given function. The auxiliary function will have the same vertex as the original function, but its zeros will be easier to determine.
+
+$f(x) = 0.25x^2 - x - 3$ is moved to: $h(x) = 0.25x^2 - x + 0$
+Now one of the zeroes is on $(0, 0)$
+
+2) **Determine the zeros of the auxiliary function**
+
+The zeros of the auxiliary function are the solutions to the equation $h(x) = 0$.
+
+$$
+\begin{align*}
+0.25x^2 - x &= 0 \\
+x(0.25x - 1) &= 0 \\
+\end{align*}
+$$
+
+So, the zeros of the auxiliary function are $x = 0$ and $x = 4$.
+
+3) **Determine the x-coordinate of the vertex**
+
+The x-coordinate of the vertex is the midpoint between the two zeros.
+
+$$
+x_{vertex} = \frac{0 + 4}{2} = 2
+$$
+
+4) **Calculate the y-coordinate of the vertex**
+
+The y-coordinate of the vertex is found by substituting the x-coordinate into the original function.
+
+$$
+\text{Vertex } = 0.25(2)^2 - 3 = -4
+$$
+
+So, the vertex of the function $f(x) = 0.25x^2 - x - 3$ is $(2, -4)$.x
