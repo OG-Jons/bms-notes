@@ -15,6 +15,9 @@
 		- [Calculating squares](./topics/maths/quadratics/calculating_squares.md)
 - [Physics](./topics/physics)
 
+	- [Electronics](./topics/physics/electronics)
+
+		- [Electronics basics](./topics/physics/electronics/electronics_basics.md)
 	- [Kinematics](./topics/physics/kinematics)
 
 		- [Free-fall](./topics/physics/kinematics/free-fall.md)
