@@ -11,6 +11,7 @@
 		- [Equations](./topics/maths/linear/equations.md)
 	- [Quadratics](./topics/maths/quadratics)
 
+		- [Defining quadratic functions](./topics/maths/quadratics/defining_quadratic_functions.md)
 		- [Equations and parabola](./topics/maths/quadratics/equations_and_parabola.md)
 		- [Calculating squares](./topics/maths/quadratics/calculating_squares.md)
 - [Physics](./topics/physics)
