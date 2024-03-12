@@ -82,6 +82,7 @@ Basic Formula: $\displaystyle y = ax^2 + bx + c$
 Point P: $\displaystyle 8 = a * -4^2 + b * -4 + c$
 Point Q: $\displaystyle 0 = a * 0^2 + b * 0 + c$
 Point R: $\displaystyle 15 = a * 10^2 + b * 10 + c$
+
 $$
 {\left|
     \begin{align*}
@@ -93,6 +94,7 @@ $$
 \text{Solve 3x3 System of Equations (SoE)}
 }
 $$
+
 $$
 {\left|
     \begin{align*}
@@ -164,6 +166,7 @@ Fill in $P$: $3 = a(1 + 1)^2 = a * 2^2 = 4a$
 Calculate $a = \frac{3}{4}$
 Then: $f(x) = \frac{3}{4}(x + 1)^2$
 And then convert to basic formula:
+
 $$
 \begin{align*}
 f(x) &= \frac{3}{4}(x^2 + 2x + 1) \\
