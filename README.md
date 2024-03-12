@@ -11,9 +11,14 @@
 		- [Equations](./topics/maths/linear/equations.md)
 	- [Quadratics](./topics/maths/quadratics)
 
+		- [Calculating squares](./topics/maths/quadratics/calculating_squares.md)
 		- [Defining quadratic functions](./topics/maths/quadratics/defining_quadratic_functions.md)
 		- [Equations and parabola](./topics/maths/quadratics/equations_and_parabola.md)
-		- [Calculating squares](./topics/maths/quadratics/calculating_squares.md)
+- [History](./topics/history)
+
+	- [First world war](./topics/history/first_world_war)
+
+		- [Summary](./topics/history/first_world_war/summary.md)
 - [Physics](./topics/physics)
 
 	- [Electronics](./topics/physics/electronics)
@@ -26,8 +31,3 @@
 		- [Exercises](./topics/physics/kinematics/exercises)
 
 			- [Kinematic-1d](./topics/physics/kinematics/exercises/kinematic-1D.md)
-- [History](./topics/history)
-
-	- [First world war](./topics/history/first_world_war)
-
-		- [Summary](./topics/history/first_world_war/summary.md)
