@@ -34,6 +34,7 @@ $$
 \text{Solve 3x3 System of Equations (SoE)}
 }
 $$
+
 $$
 {\left|
     \begin{align*}
@@ -185,6 +186,7 @@ Fill in $P$: $4 = a(0 - 2)^2 + 1 = a * 4 + 1$
 Calculate $a = \frac{4 - 1}{4} = \frac{3}{4}$ 
 Then: $f(x) = \frac{3}{4}(x - 2)^2 + 1$ 
 And then convert to basic formula: 
+
 $$ \begin{align*} 
 f(x) &= \frac{3}{4}(x^2 - 4x + 4) + 1 \\ 
 &= \frac{3}{4}x^2 - 3x + 3 + 1 \\
